@@ -1,2 +1,11 @@
-El driver que se usa es "dr_testSage.c" para ambos tests.
+Comparativa para el problema de 1 neurona utilizando TIDES con ambas interfaces
+
+El driver "dr_test.c" y el motor de integracion "mintides" es común para ambas integraciones. Cambia el archivo de diferenciación automática generado por Sage o Mathematica.
+
+El código "solMPFR.*" ejecuta en alta precisión la integración para hacerla servir de solución exacta con la que comparar.
+
+El programa "script.c" ejecuta las integraciones y guarda los resultados en ficheros de texto. La leyenda está en la cabecera de cada fichero.
+
+
+El test no muestra diferencias entre Sage y Mathematica
 
