@@ -34,9 +34,9 @@
 	mpfr_init2(tini, TIDES_PREC); 
 	mpfr_init2(dt, TIDES_PREC); 
 	mpfr_set_str(tini, "0.00000000000000000000000000000000000000000000000000", 10, TIDES_RND);;
-	mpfr_set_str(dt, "1000.0000000000000000000000000000000000000000000000", 10, TIDES_RND);
+	mpfr_set_str(dt, "100.0000000000000000000000000000000000000000000000", 10, TIDES_RND);
 	int nipt = 1;
-	FILE* fd = fopen("/tmp/tmpTMfzWX/output", "w");
+	FILE* fd = fopen("solMPFR.txt", "w");
 	mp_tides_delta(function_iteration, NULL, nvar, npar, nfun, v, p, tini, dt, nipt, tolrel, tolabs, NULL, fd);
 	fclose(fd);
 	return 0;
