@@ -1,17 +1,18 @@
-VSHIFT  = (-0.01895)
-THSYN	= (-0.03)
-ESYN	= (-0.0625)
-GSYN	= (-0.0005*0.8)
-ENA	= (0.045)
-GNA	= (160.0)
-EK	= (-0.07)
-GK2	= (30.0)
-EL	= (-0.046)
-GL	= (8.0)
-C	= (0.5)
-TNA	= (0.0405)
-TK2	= (0.9)
-IAPP	= (0.006)
+from sage.interfaces.tides import *
+VSHIFT = (-0.01895)
+THSYN = (-0.03)
+ESYN = (-0.0625)
+GSYN = (-0.0005*0.8)
+ENA = (0.045)
+GNA = (160.0)
+EK = (-0.07)
+GK2 = (30.0)
+EL = (-0.046)
+GL = (8.0)
+C = (0.5)
+TNA = (0.0405)
+TK2 = (0.9)
+IAPP = (0.006)
 
 var('x0,x1,x2,x3,x4,x5,x6,x7,x8')
 
@@ -57,8 +58,9 @@ f(t,x0,x1,x2,x3,x4,x5,x6,x7,x8) = f0 + f1 + f2
 
 ics = [-0.04, 0.0210000000000000, 0.01000000000000000, -0.04, 0.0310000000000000, 0.00000000000000000, -0.01, 0.0210000000000000, 0.01000000000000000]
 
-intfile = '/home/marcos/Escritorio/testTides/test01/testSage.c'
-drfile = '/home/marcos/Escritorio/testTides/test01/dr_testSage.c'
-t = 1000
+intfile = '/home/marcos/testTides/test01/testSage.c'
+drfile = '/home/marcos/testTides/test01/dr_testSage.c'
+t = 100
 
 %time genfiles_mintides(intfile, drfile, f, ics, 0, t, t, output = 'Screen')
+

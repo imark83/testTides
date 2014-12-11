@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[     27339,        864]
-NotebookOptionsPosition[     25336,        790]
-NotebookOutlinePosition[     25841,        812]
-CellTagsIndexPosition[     25756,        807]
+NotebookDataLength[     24701,        762]
+NotebookOptionsPosition[     23715,        723]
+NotebookOutlinePosition[     24067,        739]
+CellTagsIndexPosition[     24024,        736]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -106,7 +106,7 @@ Cell[BoxData[{
          RowBox[{"-", "1000.0"}], "*", 
          RowBox[{"(", 
           RowBox[{"x6", "-", "THSYN"}], ")"}]}], "]"}]}], ")"}]}]}], ";"}], 
-  "\[IndentingNewLine]", "\n"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"Isyn0", "=", 
    RowBox[{"GSYN", "*", 
@@ -337,32 +337,6 @@ Cell[BoxData[{
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Length", "[", 
-  RowBox[{"Append", "[", 
-   RowBox[{"f0", ",", "f1"}], "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.6266843679687643`*^9, 3.626684380228323*^9}}],
-
-Cell[BoxData["4"], "Output",
- CellChangeTimes->{{3.626684374299109*^9, 3.626684380563634*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Length", "[", 
-  RowBox[{"f0", "+", "f1"}], "]"}]], "Input",
- CellChangeTimes->{{3.626682733194212*^9, 3.626682733372402*^9}, {
-  3.626684313172653*^9, 3.6266843141809797`*^9}, {3.6266843592283688`*^9, 
-  3.626684362395632*^9}}],
-
-Cell[BoxData["3"], "Output",
- CellChangeTimes->{{3.626682733544077*^9, 3.6266827621021233`*^9}, {
-   3.62668431538451*^9, 3.626684325371477*^9}, 3.626684362736191*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
  RowBox[{
   RowBox[{
    RowBox[{
@@ -377,9 +351,42 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   RowBox[{"-", "2659.348`"}], ",", 
+   RowBox[{"2.`", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "1329.674`"}], "-", 
+      RowBox[{"0.000825`", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox["1.`", 
+          RowBox[{"1.`", "\[VeryThinSpace]", "+", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{
+             RowBox[{"-", "1000.`"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"0.03`", "\[VeryThinSpace]", "+", "x3"}], ")"}]}]]}]], 
+         "+", 
+         FractionBox["1.`", 
+          RowBox[{"1.`", "\[VeryThinSpace]", "+", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{
+             RowBox[{"-", "1000.`"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"0.03`", "\[VeryThinSpace]", "+", "x6"}], ")"}]}]]}]]}],
+         ")"}]}]}], ")"}]}], ",", 
    RowBox[{"-", "98.76543209876543`"}], ",", "0.`"}], "}"}]], "Output",
- CellChangeTimes->{3.626682340397653*^9, 3.6266827660498857`*^9}]
+ CellChangeTimes->{3.626682340397653*^9, 3.6266827660498857`*^9, 
+  3.627285561906231*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", "\"\<~/testTides/test01\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.627285289398758*^9, 3.62728530163933*^9}}],
+
+Cell[BoxData["\<\"/home/marcos/testTides/test01\"\>"], "Output",
+ CellChangeTimes->{3.627285335397641*^9, 3.62728556195011*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -425,7 +432,8 @@ Cell[BoxData[
      Annotation[#, "http://gme.unizar.es/software/tides", "Hyperlink"]& ]}],
    Background->RGBColor[1, 1, 0.85]],
   DisplayForm]], "Output",
- CellChangeTimes->{3.6266827883995457`*^9}]
+ CellChangeTimes->{3.6266827883995457`*^9, 3.627285367106578*^9, 
+  3.62728556202214*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -662,134 +670,59 @@ Cell[BoxData[
  CellChangeTimes->{{3.626680738055457*^9, 3.626680764676968*^9}, {
    3.626680802919764*^9, 3.62668081735443*^9}, 3.626680879385702*^9, 
    3.62668117202705*^9, 3.626682795111959*^9, {3.626684335634383*^9, 
-   3.626684347922195*^9}, 3.626684444455283*^9}]
+   3.626684347922195*^9}, 3.626684444455283*^9, 3.627285373234211*^9, 
+   3.627285562139093*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{
+ RowBox[{"Timing", "[", 
   RowBox[{"TSMCodeFiles", "[", 
    RowBox[{"eq", ",", "\"\<testMath\>\"", ",", 
     RowBox[{"Output", "\[Rule]", "Screen"}], ",", 
     RowBox[{"MinTIDES", "\[Rule]", "\"\<C\>\""}], ",", 
-    RowBox[{"TIDESFiles", "\[Rule]", "True"}]}], "]"}], "\[IndentingNewLine]",
-   "\[IndentingNewLine]", "\n", "\n", "\[IndentingNewLine]", 
-  "\[IndentingNewLine]", "\n", "\[IndentingNewLine]", "\n", "\n", "\n", 
-  "\[IndentingNewLine]", "\n", "\n"}]], "Input",
+    RowBox[{"TIDESFiles", "\[Rule]", "True"}]}], "]"}], "]"}]], "Input",
  CellChangeTimes->{{3.626680023103219*^9, 3.626680202223495*^9}, {
   3.6266802813219748`*^9, 3.626680433871064*^9}, {3.6266804752062263`*^9, 
   3.626680506135056*^9}, {3.626680571058638*^9, 3.6266806239701633`*^9}, {
   3.626680672665327*^9, 3.626680696393591*^9}, {3.626681282554769*^9, 
-  3.62668131460175*^9}}],
+  3.62668131460175*^9}, {3.627285417753196*^9, 3.627285443458445*^9}}],
 
-Cell[BoxData["\<\"Files \\\"dr_testMath.c\\\", testMath.c\\\" \
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.44346400000000002483702132849430199713`5.667458283251355", 
+   ",", "\<\"Files \\\"dr_testMath.c\\\", testMath.c\\\" \
 \\\"minc_tides.c\\\", \\\"minc_tides.h\\\", written on directory \
-\\\"/home/marcos\\\".\"\>"], "Output",
- CellChangeTimes->{3.626682797686751*^9, 3.626684449606835*^9}]
+\\\"/home/marcos/testTides/test01\\\".\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.626682797686751*^9, 3.626684449606835*^9, 3.627285424147039*^9, {
+   3.6272854562666473`*^9, 3.6272854593625507`*^9}, 3.6272855626665173`*^9}]
 }, Open  ]],
-
-Cell[BoxData["\"\<Files \\\"drtestMath.c\\\", testMath.c\\\" \
-\\\"minctides.c\\\", \\\"minctides.h\\\", written on directory \
-\\\"/home/marcos\\\".\>\""], "Input",
- CellChangeTimes->{{3.626682456615713*^9, 3.626682456656025*^9}}],
-
-Cell[BoxData["Isyn0"], "Input",
- CellChangeTimes->{{3.6266803584715157`*^9, 3.626680363282804*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Exp", "[", "0", "]"}]], "Input",
- CellChangeTimes->{{3.62668044535774*^9, 3.626680461784337*^9}}],
-
-Cell[BoxData["1"], "Output",
- CellChangeTimes->{{3.6266804376077147`*^9, 3.6266804620908546`*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["mNaInf0"], "Input"],
-
-Cell[BoxData["mNaInf0"], "Output",
- CellChangeTimes->{{3.626680363909067*^9, 3.6266804029361897`*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["f0"], "Input",
- CellChangeTimes->{{3.626680129859797*^9, 3.62668012996502*^9}}],
-
-Cell[BoxData["f0"], "Output",
- CellChangeTimes->{{3.626680130379334*^9, 3.6266801525737743`*^9}, 
-   3.626680184015272*^9, {3.62668032872433*^9, 3.626680339816866*^9}}]
-}, Open  ]],
-
-Cell[BoxData["gamma0"], "Input",
- CellChangeTimes->{{3.626680273481681*^9, 3.626680274936439*^9}}],
+ RowBox[{"Timing", "[", 
+  RowBox[{"TSMCodeFiles", "[", 
+   RowBox[{"eq", ",", "\"\<testMath\>\"", ",", 
+    RowBox[{"Output", "\[Rule]", "Screen"}], ",", 
+    RowBox[{"MinTIDES", "\[Rule]", "\"\<C\>\""}], ",", 
+    RowBox[{"TIDESFiles", "\[Rule]", "True"}]}], "]"}], "]"}]], "Input"],
 
 Cell[BoxData[
- FractionBox["1.`", 
+ RowBox[{"{", 
   RowBox[{
-   RowBox[{"1.`", "\[VeryThinSpace]", "-", 
-    RowBox[{"1000.`", " ", 
-     RowBox[{"Exp", "[", 
-      RowBox[{"0.03`", "\[VeryThinSpace]", "+", "x0"}]}]}]}], ")"}]]], "Input",
- CellChangeTimes->{{3.626682682276402*^9, 3.626682682362628*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"eq", "=", 
-  RowBox[{"FirstOrderODE", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"x", "+", "y"}], ",", "x", ",", "y"}], "}"}], ",", "t", ",", 
-    RowBox[{"{", 
-     RowBox[{"x0", ",", "x1", ",", "x2"}], "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.626680161603725*^9, 3.626680252602598*^9}}],
-
-Cell[BoxData[
- RowBox[{"FirstOrderODE", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"x", "+", "y"}], ",", "x", ",", "y"}], "}"}], ",", "t", ",", 
-   RowBox[{"{", 
-    RowBox[{"x0", ",", "x1", ",", "x2"}], "}"}]}], "]"}]], "Output",
- CellChangeTimes->{{3.6266802239963923`*^9, 3.626680252924323*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["eq"], "Input",
- CellChangeTimes->{{3.626680256292185*^9, 3.626680256326915*^9}}],
-
-Cell[BoxData[
- RowBox[{"FirstOrderODE", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"x", "+", "y"}], ",", "x", ",", "y"}], "}"}], ",", "t", ",", 
-   RowBox[{"{", 
-    RowBox[{"x0", ",", "x1", ",", "x2"}], "}"}]}], "]"}]], "Output",
- CellChangeTimes->{3.626680256670643*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Information", "[", "f0", "]"}]], "Input",
- NumberMarks->False],
-
-Cell["Global`f0", "Print", "PrintUsage",
- CellChangeTimes->{3.6266801444462967`*^9},
- CellTags->"Info3626683744-5131369"]
+  "0.07839500000000000634603480875739478506`4.914888277728656", 
+   ",", "\<\"Files \\\"dr_testMath.c\\\", testMath.c\\\" \
+\\\"minc_tides.c\\\", \\\"minc_tides.h\\\", written on directory \
+\\\"/home/marcos/testTides/test01\\\".\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.627285602114171*^9}]
 }, Open  ]]
 },
 WindowSize->{1141, 840},
-WindowMargins->{{68, Automatic}, {-9, 2}},
+WindowMargins->{{48, Automatic}, {-9, 2}},
 ShowSelection->True,
 FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
 StyleDefinitions->"Default.nb"
@@ -798,73 +731,38 @@ StyleDefinitions->"Default.nb"
 
 (* Internal cache information *)
 (*CellTagsOutline
-CellTagsIndex->{
- "Info3626683744-5131369"->{
-  Cell[25199, 785, 121, 2, 42, "Print",
-   CellTags->"Info3626683744-5131369"]}
- }
+CellTagsIndex->{}
 *)
 (*CellTagsIndex
-CellTagsIndex->{
- {"Info3626683744-5131369", 25652, 801}
- }
+CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[545, 20, 1483, 52, 319, "Input"],
 Cell[2031, 74, 7504, 260, 847, "Input"],
 Cell[CellGroupData[{
-Cell[9560, 338, 186, 4, 32, "Input"],
-Cell[9749, 344, 94, 1, 32, "Output"]
+Cell[9560, 338, 355, 10, 32, "Input"],
+Cell[9918, 350, 1012, 28, 52, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9880, 350, 252, 5, 32, "Input"],
-Cell[10135, 357, 167, 2, 32, "Output"]
+Cell[10967, 383, 155, 2, 32, "Input"],
+Cell[11125, 387, 127, 1, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10339, 364, 355, 10, 32, "Input"],
-Cell[10697, 376, 214, 5, 32, "Output"]
+Cell[11289, 393, 121, 2, 32, "Input"],
+Cell[11413, 397, 1460, 38, 124, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10948, 386, 121, 2, 32, "Input"],
-Cell[11072, 390, 1414, 37, 124, "Output"]
+Cell[12910, 440, 601, 13, 32, "Input"],
+Cell[13514, 455, 8351, 218, 402, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12523, 432, 601, 13, 32, "Input"],
-Cell[13127, 447, 8303, 217, 402, "Output"]
+Cell[21902, 678, 657, 11, 32, "Input"],
+Cell[22562, 691, 462, 9, 55, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21467, 669, 786, 14, 341, "Input"],
-Cell[22256, 685, 233, 3, 32, "Output"]
-}, Open  ]],
-Cell[22504, 691, 231, 3, 55, "Input"],
-Cell[22738, 696, 99, 1, 32, "Input"],
-Cell[CellGroupData[{
-Cell[22862, 701, 121, 2, 32, "Input"],
-Cell[22986, 705, 98, 1, 32, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[23121, 711, 33, 0, 32, "Input"],
-Cell[23157, 713, 102, 1, 32, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[23296, 719, 93, 1, 32, "Input"],
-Cell[23392, 722, 168, 2, 32, "Output"]
-}, Open  ]],
-Cell[23575, 727, 98, 1, 32, "Input"],
-Cell[23676, 730, 289, 7, 59, InheritFromParent],
-Cell[CellGroupData[{
-Cell[23990, 741, 342, 9, 32, "Input"],
-Cell[24335, 752, 315, 8, 32, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[24687, 765, 94, 1, 32, "Input"],
-Cell[24784, 768, 289, 8, 32, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[25110, 781, 86, 2, 32, "Input"],
-Cell[25199, 785, 121, 2, 42, "Print",
- CellTags->"Info3626683744-5131369"]
+Cell[23061, 705, 298, 6, 32, "Input"],
+Cell[23362, 713, 337, 7, 55, "Output"]
 }, Open  ]]
 }
 ]
