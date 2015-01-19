@@ -1,0 +1,2 @@
+El driver que se usa es "dr_testSage.c" para ambos tests.
+
